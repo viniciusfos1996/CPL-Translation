@@ -17,132 +17,602 @@
 */
  -->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name" msgid="649227358658669779">"Tela de início 3"</string>
-    <string name="folder_name" msgid="7371454440695724752"></string>
-    <string name="work_folder_name" msgid="3753320833950115786">"Trabalho"</string>
-    <string name="activity_not_found" msgid="8071924732094499514">"O app não está instalado."</string>
-    <string name="activity_not_available" msgid="7456344436509528827">"O app não está disponível"</string>
-    <string name="safemode_shortcut_error" msgid="9160126848219158407">"App transferido por download desativado no modo de segurança"</string>
-    <string name="safemode_widget_error" msgid="4863470563535682004">"Widgets desativados no modo de segurança"</string>
-    <string name="shortcut_not_available" msgid="2536503539825726397">"O atalho não está disponível"</string>
-    <string name="home_screen" msgid="806512411299847073">"Tela inicial"</string>
-    <string name="custom_actions" msgid="3747508247759093328">"Ações personalizadas"</string>
-    <string name="long_press_widget_to_add" msgid="7699152356777458215">"Toque e pressione para selecionar um widget."</string>
-    <string name="long_accessible_way_to_add" msgid="4289502106628154155">"Toque duas vezes e segure para selecionar um widget ou usar ações personalizadas."</string>
-    <string name="widget_dims_format" msgid="2370757736025621599">"%1$d × %2$d"</string>
-    <string name="widget_accessible_dims_format" msgid="3640149169885301790">"%1$d de largura por %2$d de altura"</string>
-    <string name="add_item_request_drag_hint" msgid="5899764264480397019">"Toque e mantenha pressionado para posicionar manualmente"</string>
-    <string name="place_automatically" msgid="8064208734425456485">"Adicionar automaticamente"</string>
-    <string name="all_apps_search_bar_hint" msgid="1390553134053255246">"Apps de pesquisa"</string>
-    <string name="all_apps_loading_message" msgid="5813968043155271636">"Carregando apps…"</string>
-    <string name="all_apps_no_search_results" msgid="3200346862396363786">"Nenhum app encontrado que corresponda a \"<xliff:g id="QUERY">%1$s</xliff:g>\""</string>
-    <string name="all_apps_search_market_message" msgid="1366263386197059176">"Pesquisar mais apps"</string>
-    <string name="notifications_header" msgid="1404149926117359025">"Notificações"</string>
-    <string name="out_of_space" msgid="4691004494942118364">"Não há mais espaço na tela inicial."</string>
-    <string name="hotseat_out_of_space" msgid="7448809638125333693">"Sem espaço na bandeja de favoritos"</string>
-    <string name="all_apps_button_label" msgid="8130441508702294465">"Lista de apps"</string>
-    <string name="all_apps_home_button_label" msgid="252062713717058851">"Início"</string>
-    <string name="remove_drop_target_label" msgid="7812859488053230776">"Remover"</string>
-    <string name="uninstall_drop_target_label" msgid="4722034217958379417">"Desinstalar"</string>
-    <string name="app_info_drop_target_label" msgid="692894985365717661">"Informações do app"</string>
-    <string name="permlab_install_shortcut" msgid="5632423390354674437">"instalar atalhos"</string>
-    <string name="permdesc_install_shortcut" msgid="923466509822011139">"Permite que um app adicione atalhos sem intervenção do usuário."</string>
-    <string name="permlab_read_settings" msgid="1941457408239617576">"ler configurações e atalhos da tela inicial"</string>
-    <string name="permdesc_read_settings" msgid="5833423719057558387">"Permite que o app leia as configurações e os atalhos na tela inicial."</string>
-    <string name="permlab_write_settings" msgid="3574213698004620587">"gravar configurações e atalhos da tela inicial"</string>
-    <string name="permdesc_write_settings" msgid="5440712911516509985">"Permite que o app altere as configurações e os atalhos na tela inicial."</string>
-    <string name="msg_no_phone_permission" msgid="9208659281529857371">"<xliff:g id="APP_NAME">%1$s</xliff:g> não tem permissão para fazer chamadas"</string>
-    <string name="gadget_error_text" msgid="6081085226050792095">"Problema ao carregar o widget"</string>
-    <string name="gadget_setup_text" msgid="8274003207686040488">"Configuração"</string>
-    <string name="uninstall_system_app_text" msgid="4172046090762920660">"Este é um app do sistema e não pode ser desinstalado."</string>
-    <string name="folder_hint_text" msgid="6617836969016293992">"Pasta sem nome"</string>
-    <string name="disabled_app_label" msgid="6673129024321402780">"<xliff:g id="APP_NAME">%1$s</xliff:g> desativado"</string>
-    <string name="default_scroll_format" msgid="7475544710230993317">"Página %1$d de %2$d"</string>
-    <string name="workspace_scroll_format" msgid="8458889198184077399">"Tela inicial %1$d de %2$d"</string>
-    <string name="workspace_new_page" msgid="257366611030256142">"Nova página na tela inicial"</string>
-    <string name="folder_opened" msgid="94695026776264709">"Pasta aberta, <xliff:g id="WIDTH">%1$d</xliff:g> por <xliff:g id="HEIGHT">%2$d</xliff:g>"</string>
-    <string name="folder_tap_to_close" msgid="4625795376335528256">"Toque para fechar a pasta"</string>
-    <string name="folder_tap_to_rename" msgid="4017685068016979677">"Toque para salvar o novo nome"</string>
-    <string name="folder_closed" msgid="4100806530910930934">"Pasta fechada"</string>
-    <string name="folder_renamed" msgid="1794088362165669656">"Pasta renomeada para <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="folder_name_format" msgid="6629239338071103179">"Pasta: <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="widget_button_text" msgid="2880537293434387943">"Widgets"</string>
-    <string name="wallpaper_button_text" msgid="8404103075899945851">"Planos de fundo"</string>
-    <string name="settings_button_text" msgid="8873672322605444408">"Configurações da página inicial"</string>
-    <string name="msg_disabled_by_admin" msgid="6898038085516271325">"Desativado pelo administrador"</string>
-    <string name="accessibility_action_overview" msgid="6257665857640347026">"Visão geral"</string>
-    <string name="allow_rotation_title" msgid="7728578836261442095">"Permitir rotação da tela inicial"</string>
-    <string name="allow_rotation_desc" msgid="8662546029078692509">"Quando o smartphone for girado"</string>
-    <string name="allow_rotation_blocked_desc" msgid="3212602545192996253">"A configuração atual de exibição não permite rotação"</string>
-    <string name="icon_badging_title" msgid="874121399231955394">"Pontos de notificação"</string>
-    <string name="icon_badging_desc_on" msgid="2627952638544674079">"Ativado"</string>
-    <string name="icon_badging_desc_off" msgid="5503319969924580241">"Desativado"</string>
-    <string name="title_missing_notification_access" msgid="7503287056163941064">"Acesso a notificações necessário"</string>
-    <string name="msg_missing_notification_access" msgid="281113995110910548">"Para mostrar pontos de notificação, ative as notificações de app para <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="title_change_settings" msgid="1376365968844349552">"Alterar configurações"</string>
-    <string name="auto_add_shortcuts_label" msgid="8222286205987725611">"Adicionar ícone à tela inicial"</string>
-    <string name="auto_add_shortcuts_description" msgid="7117251166066978730">"Para novos apps"</string>
-    <string name="icon_shape_override_label" msgid="2977264953998281004">"Alterar forma de ícones"</string>
-    <string name="icon_shape_system_default" msgid="1709762974822753030">"Usar padrão do sistema"</string>
-    <string name="icon_shape_square" msgid="633575066111622774">"Quadrado"</string>
-    <string name="icon_shape_squircle" msgid="5658049910802669495">"Quadrado arredondado"</string>
-    <string name="icon_shape_circle" msgid="6550072265930144217">"Círculo"</string>
-    <string name="icon_shape_teardrop" msgid="4525869388200835463">"Lágrima"</string>
-    <string name="icon_shape_override_progress" msgid="3461735694970239908">"Aplicando alterações na forma dos ícones"</string>
-    <string name="package_state_unknown" msgid="7592128424511031410">"Desconhecido"</string>
-    <string name="abandoned_clean_this" msgid="7610119707847920412">"Remover"</string>
-    <string name="abandoned_search" msgid="891119232568284442">"Pesquisar"</string>
-    <string name="abandoned_promises_title" msgid="7096178467971716750">"Este app não está instalado"</string>
-    <string name="abandoned_promise_explanation" msgid="3990027586878167529">"O app deste ícone não está instalado. Você pode remover o ícone, ou procurar o app e instalá-lo manualmente."</string>
-    <string name="app_downloading_title" msgid="8336702962104482644">"Fazendo download de <xliff:g id="NAME">%1$s</xliff:g>, <xliff:g id="PROGRESS">%2$s</xliff:g> concluído"</string>
-    <string name="app_waiting_download_title" msgid="7053938513995617849">"Aguardando instalação de <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="widgets_bottom_sheet_title" msgid="2904559530954183366">"Widgets do <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="action_add_to_workspace" msgid="8902165848117513641">"Adicionar à tela inicial"</string>
-    <string name="action_move_here" msgid="2170188780612570250">"Mover item para cá"</string>
-    <string name="item_added_to_workspace" msgid="4211073925752213539">"Item adicionado à tela inicial"</string>
-    <string name="item_removed" msgid="851119963877842327">"Item removido"</string>
-    <string name="action_move" msgid="4339390619886385032">"Mover item"</string>
-    <string name="move_to_empty_cell" msgid="2833711483015685619">"Mover para a linha <xliff:g id="NUMBER_0">%1$s</xliff:g>, coluna <xliff:g id="NUMBER_1">%2$s</xliff:g>"</string>
-    <string name="move_to_position" msgid="6750008980455459790">"Mover para a posição <xliff:g id="NUMBER">%1$s</xliff:g>"</string>
-    <string name="move_to_hotseat_position" msgid="6295412897075147808">"Mover para a posição <xliff:g id="NUMBER">%1$s</xliff:g> dos favoritos"</string>
-    <string name="item_moved" msgid="4606538322571412879">"Item movido"</string>
-    <string name="add_to_folder" msgid="9040534766770853243">"Adicionar à pasta: <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="add_to_folder_with_app" msgid="4534929978967147231">"Adicionar à pasta com <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="added_to_folder" msgid="4793259502305558003">"Item adicionado à pasta"</string>
-    <string name="create_folder_with" msgid="4050141361160214248">"Criar pasta com: <xliff:g id="NAME">%1$s</xliff:g>"</string>
-    <string name="folder_created" msgid="6409794597405184510">"Pasta criada"</string>
-    <string name="action_move_to_workspace" msgid="1603837886334246317">"Mover para a tela inicial"</string>
-    <string name="action_move_screen_left" msgid="8854216831569401665">"Mover tela para a esquerda"</string>
-    <string name="action_move_screen_right" msgid="329334910274311123">"Mover tela para a direita"</string>
-    <string name="screen_moved" msgid="266230079505650577">"Tela movida"</string>
-    <string name="action_resize" msgid="1802976324781771067">"Redimensionar"</string>
-    <string name="action_increase_width" msgid="8773715375078513326">"Aumentar largura"</string>
-    <string name="action_increase_height" msgid="459390020612501122">"Aumentar altura"</string>
-    <string name="action_decrease_width" msgid="1374549771083094654">"Diminuir largura"</string>
-    <string name="action_decrease_height" msgid="282377193880900022">"Diminuir altura"</string>
-    <string name="widget_resized" msgid="9130327887929620">"Widget redimensionado para a largura <xliff:g id="NUMBER_0">%1$s</xliff:g>, altura <xliff:g id="NUMBER_1">%2$s</xliff:g>"</string>
-    <string name="action_deep_shortcut" msgid="2864038805849372848">"Atalhos"</string>
-    <string name="shortcuts_menu_description" msgid="406159963824238648">"<xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g> atalhos para <xliff:g id="APP_NAME">%2$s</xliff:g>"</string>
-    <string name="shortcuts_menu_with_notifications_description" msgid="8985659504915468840">"<xliff:g id="NUMBER_OF_SHORTCUTS">%1$d</xliff:g> atalhos e <xliff:g id="NUMBER_OF_NOTIFICATIONS">%2$d</xliff:g> notificações para o app <xliff:g id="APP_NAME">%3$s</xliff:g>"</string>
-    <string name="action_dismiss_notification" msgid="5909461085055959187">"Dispensar"</string>
-    <string name="notification_dismissed" msgid="6002233469409822874">"Notificação dispensada"</string>
-    <string name="smartspace_preferences">Preferências</string>
-    <string name="label_search">Pesquisar</string>
-    <string name="label_voice_search">Pesquisa por voz</string>
-    <string name="pref_icon_pack">Conjunto de ícones</string>
-    <string name="state_loading">A aplicar…</string>
-    <string name="smartspace_preferences_in_settings">Resumo</string>
-    <string name="smartspace_preferences_in_settings_desc">Na parte superior da tela inicial</string>
-    <string name="title_show_google_app">Exibir %1$s</string>
-    <string name="msg_minus_one_on_left">À esquerda da tela inicial principal</string>
-    <string name="about">Sobre</string>
-    <string name="title_google_app">Google app</string>
-    <string name="title_app_suggestions">Exibir sugestões de apps</string>
-    <string name="summary_app_suggestions">No topo da sua lista Todos os apps</string>
-    <string name="about_app_version">Versão</string>
-    <string name="title_disable_suggestions_prompt">Desativar sugestões de apps?</string>
-    <string name="msg_disable_suggestions_prompt">As sugestões não serão exibidas na parte superior da sua lista de apps, e os dados de uso utilizados para criá-las serão permanentemente limpos.</string>
-    <string name="label_turn_off_suggestions">DESATIVAR</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="abandoned_clean_this">Remover</string>
+  <string name="abandoned_promise_explanation">"O aplicativo para este ícone não está instalado. Você pode removê-lo ou procurar o aplicativo e instalá-lo manualmente."</string>
+  <string name="abandoned_promises_title">Este aplicativo não está instalado</string>
+  <string name="abandoned_search">Procurar</string>
+  <string name="abc_action_bar_home_description">Navegue para casa</string>
+  <string name="abc_action_bar_up_description">Subir</string>
+  <string name="abc_action_menu_overflow_description">Mais opções</string>
+  <string name="abc_action_mode_done">Feito</string>
+  <string name="abc_activity_chooser_view_see_all">Ver tudo</string>
+  <string name="abc_activitychooserview_choose_application">Escolha um aplicativo</string>
+  <string name="abc_capital_off">Desligado</string>
+  <string name="abc_capital_on">Ligado</string>
+  <string name="abc_font_family_body_1_material">sem serifa</string>
+  <string name="abc_font_family_body_2_material">sans-serif-medium</string>
+  <string name="abc_font_family_button_material">sans-serif-medium</string>
+  <string name="abc_font_family_caption_material">sem serifa</string>
+  <string name="abc_font_family_display_1_material">sem serifa</string>
+  <string name="abc_font_family_display_2_material">sem serifa</string>
+  <string name="abc_font_family_display_3_material">sem serifa</string>
+  <string name="abc_font_family_display_4_material">sans-serif-light</string>
+  <string name="abc_font_family_headline_material">sem serifa</string>
+  <string name="abc_font_family_menu_material">sem serifa</string>
+  <string name="abc_font_family_subhead_material">sem serifa</string>
+  <string name="abc_font_family_title_material">sans-serif-medium</string>
+  <string name="abc_search_hint">Procurar…</string>
+  <string name="abc_searchview_description_clear">Consulta clara</string>
+  <string name="abc_searchview_description_query">Consulta de pesquisa</string>
+  <string name="abc_searchview_description_search">Procurar</string>
+  <string name="abc_searchview_description_submit">Enviar consulta</string>
+  <string name="abc_searchview_description_voice">Pesquisa por voz</string>
+  <string name="abc_shareactionprovider_share_with">Compartilhar com</string>
+  <string name="abc_shareactionprovider_share_with_application">Compartilhar com% s</string>
+  <string name="abc_toolbar_collapse_description">Colapso</string>
+  <string name="about">Sobre</string>
+  <string name="about_app_version_wtu">Versão</string>
+  <string name="about_sum">"Lançador baseado em CPL - AOSP com funcionalidade expandida. É grátis e não contém anúncios."</string>
+  <string name="accent_color_sum">Cor de pop-up de rolagem rápida, botões e barra de pesquisa de ações</string>
+  <string name="accent_drawer">Cor de destaque</string>
+  <string name="accessibility_action_overview">visão global</string>
+  <string name="accordion">Acordeão</string>
+  <string name="action_add_to_workspace">Adicionar à tela inicial</string>
+  <string name="action_app_drawer">Abrir gaveta de aplicativos</string>
+  <string name="action_app_search">Abra a pesquisa de aplicativos</string>
+  <string name="action_decrease_height">Diminuir a altura</string>
+  <string name="action_decrease_width">Diminuir a largura</string>
+  <string name="action_deep_shortcut">Atalhos</string>
+  <string name="action_default_screen">Ir para a tela padrão</string>
+  <string name="action_dismiss_notification">Dispensar</string>
+  <string name="action_edit">Editar</string>
+  <string name="action_first_screen">Ir para a primeira tela</string>
+  <string name="action_increase_height">Aumentar a altura</string>
+  <string name="action_increase_width">Aumentar a largura</string>
+  <string name="action_last_screen">Ir para a última tela</string>
+  <string name="action_lock">Bloqueio</string>
+  <string name="action_move">Mover item</string>
+  <string name="action_move_here">Mover item aqui</string>
+  <string name="action_move_screen_left">Mover a tela para a esquerda</string>
+  <string name="action_move_screen_right">Mover a tela para a direita</string>
+  <string name="action_move_to_workspace">Mover para a tela inicial</string>
+  <string name="action_nothing">Nada</string>
+  <string name="action_notifications">Abra o painel de notificações</string>
+  <string name="action_notifications_with_settings">Abra o painel de notificações com configurações rápidas</string>
+  <string name="action_overview">Inserir visão geral</string>
+  <string name="action_quick_search">Pesquisa rápida</string>
+  <string name="action_resize">Redimensionar</string>
+  <string name="action_settings">Configurações do dispositivo</string>
+  <string name="action_voice_search">Pesquisa por voz</string>
+  <string name="activity_not_available">"App não está disponível"</string>
+  <string name="activity_not_found">"App não está instalado"</string>
+  <string name="add_item_request_drag_hint">Toque e segure para colocar manualmente</string>
+  <string name="add_to_folder">Adicionar à pasta:% 1 $ s</string>
+  <string name="add_to_folder_with_app">Adicionar à pasta com% 1 $ s</string>
+  <string name="add_translation">Adicione ou melhore a tradução</string>
+  <string name="added_to_folder">Item adicionado à pasta</string>
+  <string name="additional_options">Opções adicionais</string>
+  <string name="all_apps">Lista de aplicativos</string>
+  <string name="all_apps_button_label">Lista de aplicativos</string>
+  <string name="all_apps_home_button_label">Casa</string>
+  <string name="all_apps_loading_message">Carregando aplicativos…</string>
+  <string name="all_apps_no_search_results">Nenhum aplicativo encontrado correspondente a  "% 1 $ s "</string>
+  <string name="all_apps_search_bar_hint">Apps de pesquisa</string>
+  <string name="all_apps_search_market_message">Pesquise mais aplicativos</string>
+  <string name="all_icons">Todos os ícones</string>
+  <string name="allow_rotation_blocked_desc">"Configuração de exibição atual não permite rotação"</string>
+  <string name="allow_rotation_desc">Quando o telefone é girado</string>
+  <string name="allow_rotation_title">Rotação da tela inicial</string>
+  <string name="allow_two_line_labels_title">Permitir dois rótulos de linha</string>
+  <string name="allow_vibration">Vibração</string>
+  <string name="allow_vibration_sum">Ao clicar nos elementos da interface</string>
+  <string name="alt_gen_iconpack">Recorte alternativo de ícones</string>
+  <string name="animate_overview_pref_title">Efeito de rolagem na visão geral</string>
+  <string name="app_downloading_title">% 1 $ s fazendo download,% 2 $ s concluído</string>
+  <string name="app_info_drop_target_label">Informações do aplicativo</string>
+  <string name="app_installing_progress">Mostrar o progresso da instalação do aplicativo</string>
+  <string name="app_name_pixel_launcher">CPL</string>
+  <string name="app_open_animation">Animação de abertura de aplicativo</string>
+  <string name="app_open_animation_sum">Ao abrir um novo aplicativo e retornar à tela inicial</string>
+  <string name="app_waiting_download_title">% 1 $ s está esperando para instalar</string>
+  <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout $ ScrollingViewBehavior</string>
+  <string name="apply_settings_theme">Aplicar tema às configurações</string>
+  <string name="arrow_and_line_color">Cor indicadora de cursor e página</string>
+  <string name="attention">Atenção!</string>
+  <string name="auto_add_shortcuts_description">Para novos aplicativos</string>
+  <string name="auto_add_shortcuts_label">Adicionar ícone à tela inicial</string>
+  <string name="auto_theme">Auto-tema</string>
+  <string name="auto_theme_summary">Tema depende do papel de parede escolhido</string>
+  <string name="background_color">Cor de fundo</string>
+  <string name="backup_and_restore_pref_sum">Backup e restaurar suas configurações e banco de dados</string>
+  <string name="backup_and_restore_pref_title">Restauração de backup</string>
+  <string name="backup_date">Data de criação do backup</string>
+  <string name="backup_location_message">"Local de backup não pode ser alterado"</string>
+  <string name="backup_location_note">Local de backup</string>
+  <string name="backup_location_sum">Memória interna \ Documents \ CPL \</string>
+  <string name="backup_not_found">Backup não encontrado!</string>
+  <string name="backup_perm">Permissões</string>
+  <string name="backup_pref_title">Cópia de segurança</string>
+  <string name="backup_slot">Slot de backup</string>
+  <string name="badge_place">Posição do emblema</string>
+  <string name="badge_place_1">Canto superior direito</string>
+  <string name="badge_place_2">Canto inferior direito</string>
+  <string name="badge_place_3">Esquerda Superior</string>
+  <string name="badge_place_4">Inferior esquerdo</string>
+  <string name="bage_size">Tamanho do emblema</string>
+  <string name="behavior_pref_summary">Alterar como o lançador se comporta</string>
+  <string name="behavior_pref_title">Comportamento</string>
+  <string name="black_theme">Preto</string>
+  <string name="black_withdarktext_theme">Preto com texto escuro</string>
+  <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+  <string name="bridge_install">Instalar</string>
+  <string name="buyapp">Comprar aplicativo de doação</string>
+  <string name="change_grid_size">Alterar o tamanho da grade</string>
+  <string name="character_counter_pattern">% 1 $ d /% 2 $ d</string>
+  <string name="circle">Círculo</string>
+  <string name="clean_all_settings">Redefinir todas as configurações para valores padrão?</string>
+  <string name="clean_all_settings_sum">Redefinir as configurações do CPL para o padrão</string>
+  <string name="clean_all_settings_title">Redefinir para os padrões</string>
+  <string name="clean_user_icons">Redefinir ícones e rótulos de aplicativos de usuários alternativos?</string>
+  <string name="clock_format">Formato do relógio</string>
+  <string name="color_extraction_impl_class">
+  </string>
+  <string name="create_folder_with">Crie uma pasta com:% 1 $ s</string>
+  <string name="cube_in">Cubo em</string>
+  <string name="cube_out">Cube out</string>
+  <string name="current">Atual:</string>
+  <string name="custom_about_cpl">Acerca da CPL</string>
+  <string name="custom_actions">Ações personalizadas</string>
+  <string name="custom_allapp">Todos os aplicativos</string>
+  <string name="custom_allapp_summary">Personalize sua gaveta de aplicativos</string>
+  <string name="custom_badge_color">Cor de fundo do crachá</string>
+  <string name="custom_badge_text_color">Cor do texto do emblema</string>
+  <string name="custom_dockbar">Doca</string>
+  <string name="custom_dockbar_summary">Personalize a doca</string>
+  <string name="custom_folders">Pastas</string>
+  <string name="custom_folders_summary">Personalize pastas</string>
+  <string name="custom_gen_iconpack">Opções de geração de ícones</string>
+  <string name="custom_generate_new">Gere novos ícones</string>
+  <string name="custom_generate_new_one">Gere novo ícone</string>
+  <string name="custom_generate_new_sum">Limpar cache de ícones e gerar novos ícones com opções selecionadas</string>
+  <string name="custom_grid_size">Tamanho da grade</string>
+  <string name="custom_grid_size_off">O tamanho da grade depende do DPI</string>
+  <string name="custom_grid_size_on">Use o tamanho selecionado</string>
+  <string name="custom_hs">Tela inicial</string>
+  <string name="custom_hs_summary">Personalize a tela inicial e o widget  "Visão rápida "</string>
+  <string name="custom_ico">Ícones</string>
+  <string name="custom_label_color">Cor do rótulo</string>
+  <string name="custom_qsb_color">Cor do papel da barra de pesquisa</string>
+  <string name="custom_qsb_in_dock">Configurações da barra de pesquisa</string>
+  <string name="custom_qsb_text_color">Cor do texto da barra de pesquisa</string>
+  <string name="custom_theme">Tema</string>
+  <string name="custom_theme_summary">Personalize o tema e ícones</string>
+  <string name="custom_version">Versão</string>
+  <string name="cylinder_in">Cilindro em</string>
+  <string name="cylinder_out">Cilindro paDesligado</string>
+  <string name="dark_theme">Sombrio</strLigadog>
+  <string name="dark_withdarktext_theme">Escuro com texto escuro</string>
+  <string name="date">Data de construção</string>
+  <string name="date_format">Formato de data</string>
+  <string name="date_format_1">Terça-feira, 13 de fevereiro</string>
+  <string name="date_format_2">terça</string>
+  <string name="date_format_3">Ter, 13 de fevereiro</string>
+  <string name="date_format_4">Ter, 02/13</string>
+  <string name="date_format_5">13 terça-feira</string>
+  <string name="date_format_6">Terça-feira, 13 de fevereiro</string>
+  <string name="date_format_long">Longo</string>
+  <string name="date_format_normal">Normal</string>
+  <string name="date_format_short">Baixo</string>
+  <string name="debug">Depurar</string>
+  <string name="debug_sum">Reinicie ou redefina as configurações</string>
+  <string name="def">Padrão</string>
+  <string name="default_color">Cor padrão</string>
+  <string name="default_compact_search_bar">Barra de pesquisa compacta padrão</string>
+  <string name="default_home">Tela inicial padrão</string>
+  <string name="default_iconpack">Use o padrão do sistema</string>
+  <string name="default_iconpack_title">Use o padrão do sistema</string>
+  <string name="default_launcher_message">"Esta ação mudará seu lançador padrão. Tem certeza de que deseja continuar?"</string>
+  <string name="default_launcher_title">Alterar o ativador padrão</string>
+  <string name="default_live_wallpaper">com.breel.wallpapers/com.breel.wallpapers.dioramas.lagos.LagosWallpaperService</string>
+  <string name="default_scroll_format">Página% 1 $ d de% 2 $ d</string>
+  <string name="default_search_bar">Barra de pesquisa padrão</string>
+  <string name="delete">Excluir</string>
+  <string name="delete_mode">Excluir backup</string>
+  <string name="delete_package_intent">#Intent; action = android.intent.action.DELETE; launchFlags = 0x10800000; end</string>
+  <string name="delete_selected">Excluir selecionado</string>
+  <string name="delete_success">Backup excluído</string>
+  <string name="derived_app_name">@string/app_name_pixel_launcher</string>
+  <string name="desktop_show_labels">Etiquetas de ícone na tela inicial</string>
+  <string name="developer_mode">Modo de desenvolvedor</string>
+  <string name="diabledgemargin">Desabilitar</string>
+  <string name="diabledgemargin_sum">Preenchimento de tela horizontal</string>
+  <string name="disable">Desativado</string>
+  <string name="disable_dock">Desativar doca</string>
+  <string name="disabled_app_label">Desativado% 1 $ s</string>
+  <string name="divider">Divisor</string>
+  <string name="dock_height">Altura das docas</string>
+  <string name="dock_opacity">Opacidade da doca</string>
+  <string name="dock_show_labels">Etiquetas de ícone no banco dos réus</string>
+  <string name="donation_sum">CPL gratuito e não contém anúncios.  Se você gosta de CPL e quer apoiar o desenvolvimento futuro, pode doar para mim comprando meu aplicativo de doação e obtenha todos os novos recursos primeiro!</string>
+  <string name="donation_thanks">Todos os recursos mais recentes estão disponíveis</string>
+  <string name="donation_title">Doe para o desenvolvedor</string>
+  <string name="double_tap">Toque duplo</string>
+  <string name="double_tap_to_lock_disable_warning">Ao desativar o acesso de administrador, você não poderá mais bloquear sua tela inicial com gestos.</string>
+  <string name="double_tap_to_lock_hint">Para poder bloquear, você precisa ativar o acesso de administrador para o personalizável Pixel Launcher.  Esse é um bloqueio seguro, o que significa que você precisa inserir seu PIN no próximo desbloqueio, se tiver algum.</string>
+  <string name="double_tap_to_lock_method">Método de bloqueio</string>
+  <string name="double_tap_to_lock_method_not_set">Não configurado</string>
+  <string name="double_tap_to_lock_method_null">Método de bloqueio de tela padrão não definido.  Verifique as configurações para escolhê-lo.</string>
+  <string name="double_tap_to_lock_no_root">Acesso raiz indisponível ou negado</string>
+  <string name="double_tap_to_lock_summary">Na tela inicial</string>
+  <string name="double_tap_to_lock_summary_with_root">Para impressão digital desbloquear o dispositivo</string>
+  <string name="double_tap_to_lock_title">Toque duas vezes para bloquear</string>
+  <string name="double_tap_to_lock_title_with_admin">Com acesso de administrador</string>
+  <string name="double_tap_to_lock_title_with_root">Com acesso root</string>
+  <string name="double_tap_to_lock_title_with_timeout">Com tela preta</string>
+  <string name="drawable_factory_class">com.google.android.apps.nexuslauncher.DynamicDrawableFactory</string>
+  <string name="drawer_button_market">Loja de jogos</string>
+  <string name="drawer_button_mic">Microfone</string>
+  <string name="drawer_button_settings">Configurações</string>
+  <string name="drawer_button_settings_sum">No longo clique - configurações do sistema</string>
+  <string name="drawer_button_visibility">Visibilidade de aplicativos ocultos</string>
+  <string name="drawer_button_visibility_sum">No menu de aplicativos longos e ocultos</string>
+  <string name="drawer_buttons">Botões na barra de pesquisa</string>
+  <string name="drawer_buttons_select">Botões</string>
+  <string name="drawer_disable_scrollbar">Desativar barra de rolagem</string>
+  <string name="drawer_opacity">Opacidade da gaveta</string>
+  <string name="drawer_show_labels">Etiquetas de ícone na gaveta de aplicativos</string>
+  <string name="drawer_transparent_background">Fundo transparente</string>
+  <string name="edgemarginsmall">Pequeno</string>
+  <string name="edgemarginstock">estoque</string>
+  <string name="edit_app">Editar ícone</string>
+  <string name="ee">... e então um dia você encontra dez anos atrás de você</string>
+  <string name="elastic_scrolling">Rolagem elástica</string>
+  <string name="elastic_scrolling_coeff">Coeficiente de rolagem elástico</string>
+  <string name="empty">Esvaziar</string>
+  <string name="empty_slot">O slot de backup atual está vazio</string>
+  <string name="export_error">"Não foi possível fazer backup"</string>
+  <string name="extra_bottom_padding_summary">Ativar se os ícones estiverem muito próximos da barra de pesquisa inferior</string>
+  <string name="extra_bottom_padding_title">Preenchimento de fundo extra para barra de pesquisa</string>
+  <string name="extract_dock_background_color">Extrair cor do papel de parede</string>
+  <string name="extract_shortcut_color">Atalhos de colorização</string>
+  <string name="extract_shortcut_color_sum">Extraia cor de atalho do ícone do aplicativo</string>
+  <string name="fade">Aparecimento gradual</string>
+  <string name="fade_out_animation">Desvanecer animação</string>
+  <string name="fade_out_animation_sum">Ao trocar de páginas</string>
+  <string name="fall_down">Cair</string>
+  <string name="favorite_assigned">App favorito atribuído</string>
+  <string name="favorite_not_found">Aplicativo favorito não encontrado</string>
+  <string name="find_in_store">Encontrar na Play Store</string>
+  <string name="flip">Giro</string>
+  <string name="folder_adaptive_icon">Ícone de pasta adaptável</string>
+  <string name="folder_animation">Animação aberta de pastas</string>
+  <string name="folder_background_color">Cor de fundo</string>
+  <string name="folder_closed">Pasta fechada</string>
+  <string name="folder_created">Pasta criada</string>
+  <string name="folder_hint_text">Pasta sem nome</string>
+  <string name="folder_name">
+  </string>
+  <string name="folder_name_format">Pasta:% 1 $ s</string>
+  <string name="folder_opacity">Opacidade de fundo da pasta</string>
+  <string name="folder_opened">Pasta aberta,% 1 $ d por% 2 $ d</string>
+  <string name="folder_prewiew_color">Cor de pré-visualização</string>
+  <string name="folder_renamed">Pasta renomeada para% 1 $ s</string>
+  <string name="folder_show_labels">Etiquetas de ícones em pastas</string>
+  <string name="folder_tap_to_close">Toque para fechar a pasta</string>
+  <string name="folder_tap_to_rename">Toque para salvar a renomeação</string>
+  <string name="force_colour_logo">Logotipo colorido do Google</string>
+  <string name="force_mic">Mostrar microfone</string>
+  <string name="forgot">Talvez eu tenha esquecido alguém...</string>
+  <string name="from_middle">Do meio</string>
+  <string name="full_width_widgets_pref_summary">"Permitir que os ditos se estendam por
+toda a largura sem preenchimento"</string>
+  <string name="full_width_width_widgets_pref_title">Widgets de largura total</string>
+  <string name="fwp_version">1.cpl.fwp</string>
+  <string name="gadget_error_text">Widget de carregamento de problemas</string>
+  <string name="gadget_setup_text">Configuração</string>
+  <string name="gallery">Galeria</string>
+  <string name="generate_adaptive_background_summary">Para fundos de ícone adaptativos gerados</string>
+  <string name="generate_adaptive_background_title">Extrair cor do ícone herdado</string>
+  <string name="generate_adaptive_icons_summary">Para aplicativos sem ícones adaptativos</string>
+  <string name="generate_adaptive_icons_title">Gere o fundo do ícone adaptativo</string>
+  <string name="generate_random">Cor aleatória</string>
+  <string name="generate_random_brightness">Brilho máximo de cor aleatória</string>
+  <string name="gestures">Gestos</string>
+  <string name="gestures_sum">Personalize os gestos da tela inicial</string>
+  <string name="getplugin">Obter o feed do Google e o plug-in de clima</string>
+  <string name="googleinappmenu">Barra de pesquisa do Google</string>
+  <string name="gradient_dock">Doca gradiente</string>
+  <string name="gradient_size">Tamanho do gradiente</string>
+  <string name="hidden_app">App escondido</string>
+  <string name="hidden_apps_tint">Matiz cinza para aplicativos ocultos</string>
+  <string name="hide_app">Ocultar apps</string>
+  <string name="hide_app_popup_hide">Ocultar aplicativo</string>
+  <string name="hide_app_popup_hide_toast">App escondido</string>
+  <string name="hide_app_popup_show">Mostrar aplicativo</string>
+  <string name="hide_app_popup_show_toast">App mostrando</string>
+  <string name="hide_app_selected">selecionado</string>
+  <string name="hide_app_sum">Ocultar aplicativos da gaveta de aplicativos</string>
+  <string name="hide_dock_from_home_screen">Esconder doca da tela inicial</string>
+  <string name="hide_widgets_too">Ocultar widgets</string>
+  <string name="hide_widgets_too_sum">Donts mostra widgets de aplicativos ocultos</string>
+  <string name="hideapp">Ocultar da gaveta de aplicativos</string>
+  <string name="hidedonationbutton">Ocultar botão</string>
+  <string name="home_button">Botão Início</string>
+  <string name="home_opens_drawer_any_screen_pref_title">De qualquer tela</string>
+  <string name="home_opens_drawer_pref_summary">Pressionar o botão Início enquanto estiver na tela inicial abrirá a gaveta de aplicativos</string>
+  <string name="home_opens_drawer_pref_title">Botão inicial abre a gaveta de aplicativos</string>
+  <string name="home_screen">Tela inicial</string>
+  <string name="home_screen_notification_bar">Mostrar barra de notificação</string>
+  <string name="horizontal_only">Somente horizontal</string>
+  <string name="hotseatShowArrow">Mostrar carret</string>
+  <string name="hotseat_drag_indicator">Indicador de arrastar</string>
+  <string name="hotseat_out_of_space">Não há mais espaço na bandeja de favoritos</string>
+  <string name="hotseat_show_page_indicator">Mostrar indicador de página</string>
+  <string name="icon_badging_desc_ofDesligado</string>
+  <string name="icon_badging_desc_oLigado>Em</string>
+  <string name="icon_badging_sum">Personalizar pontos de notificação</string>
+  <string name="icon_badging_title">Pontos de notificação</string>
+  <string name="icon_chooser">Seletor de ícone</string>
+  <string name="icon_import_success">Banco de dados de ícones restaurado com sucesso</string>
+  <string name="icon_pack_updated">Seu pacote de ícones aplicado atualmente foi atualizado. Novos ícones para seus aplicativos podem estar disponíveis.  Recomenda-se entrar nas Configurações e reaplicar o pacote de ícones.</string>
+  <string name="icon_provider_class">com.android.launcher3.CustomIconProvider</string>
+  <string name="icon_search">Pesquisar por ícones</string>
+  <string name="icon_shape_circle">Círculo</string>
+  <string name="icon_shape_cloud">Nuvem</string>
+  <string name="icon_shape_cylinder">Cilindro</string>
+  <string name="icon_shape_lemon">Limão</string>
+  <string name="icon_shape_override_label">Forma de ícone</string>
+  <string name="icon_shape_override_progress">Aplicando mudanças de forma de ícone</string>
+  <string name="icon_shape_rounded_square">Quadrado arredondado</string>
+  <string name="icon_shape_square">Quadrado</string>
+  <string name="icon_shape_squircle">Squircle</string>
+  <string name="icon_shape_super_ellipse">Super elipse</string>
+  <string name="icon_shape_system_default">Use o padrão do sistema</string>
+  <string name="icon_shape_teardrop">Lágrima</string>
+  <string name="icon_size">Tamanho do ícone</string>
+  <string name="icons_pack_name">Pacote de ícones</string>
+  <string name="icu_abbrev_wday_month_day_no_year">EEEMMMd</string>
+  <string name="import_error">"Não foi possível restaurar"</string>
+  <string name="infinite_scroll">Rolagem infinita</string>
+  <string name="instant_app_resolver_class">
+  </string>
+  <string name="item_added_to_workspace">Item adicionado à tela inicial</string>
+  <string name="item_moved">Item movido</string>
+  <string name="item_removed">Item removido</string>
+  <string name="keep_scroll_state_pref_summary">Salva a posição de rolagem na gaveta</string>
+  <string name="keep_scroll_state_pref_title">Salvar a posição de rolagem</string>
+  <string name="label_font">Fonte do rótulo</string>
+  <string name="label_search">Procurar</string>
+  <string name="label_turn_off_suggestions">DESLIGAR</string>
+  <string name="label_voice_search">Pesquisa por voz</string>
+  <string name="launch_favorite_app_summary">Ao deslizar para baixo com dois dedos</string>
+  <string name="launch_favorite_app_title">Abra o aplicativo favorito</string>
+  <string name="layout_import_success">Layout da tela inicial restaurado com sucesso</string>
+  <string name="left_swipe">Deslize para a esquerda</string>
+  <string name="lock">Bloqueio</string>
+  <string name="lock_screen_method_1">Imediatamente bloquear totalmente o dispositivo, exigindo um PIN para desbloquear.  Isso não permitirá o desbloqueio de impressões digitais</string>
+  <string name="lock_screen_method_2">"Mostrar uma tela preta por 5 segundos enquanto a tela atinge o tempo limite e desliga. Isso respeitará as configurações normais de segurança do seu dispositivo quando a tela atingir o tempo limite, permitindo que os scanners de impressão digital sejam desbloqueados"</string>
+  <string name="lock_screen_method_3">Emular pressionando o botão liga/desliga</string>
+  <string name="long_accessible_way_to_add">Toque duas vezes e segure para selecionar um widget ou usar ações personalizadas</string>
+  <string name="long_press_widget_to_add">Toque e segure para selecionar um widget</string>
+  <string name="long_tap">Pressão longa</string>
+  <string name="make_favorite">Faça favorito</string>
+  <string name="market_search_intent">market: // search? c = apps</string>
+  <string name="more">Mais</string>
+  <string name="more_info">Mais Informações</string>
+  <string name="morepack">Obter mais ícones</string>
+  <string name="move_to_empty_cell">Mover para linha% 1 $ s coluna% 2 $ s</string>
+  <string name="move_to_hotseat_position">Mover para a posição de favoritos% 1 $ s</string>
+  <string name="move_to_position">Mover para a posição% 1 $ s</string>
+  <string name="msg_disable_suggestions_prompt">"As sugestões não aparecerão no topo da sua lista de aplicativos e os dados de uso usados ​​para criá-las serão permanentemente apagados."</string>
+  <string name="msg_disabled_by_admin">Desativado pelo seu administrador</string>
+  <string name="msg_minus_one_on_left">À esquerda da tela inicial principal</string>
+  <string name="msg_missing_notification_access">Para mostrar pontos de notificação, ative as notificações de aplicativos para% 1 $ s</string>
+  <string name="msg_no_phone_permission">% 1 $ s não tem permissão para fazer chamadas telefônicas</string>
+  <string name="not_set">Não configurado</string>
+  <string name="notification_dismissed">Notificação dispensada</string>
+  <string name="notifications_header">Notificações</string>
+  <string name="num_cols">Numero de colunas</string>
+  <string name="num_hotseat_icons_pref_title">Número de ícones de doca</string>
+  <string name="num_rows">Numero de linhas</string>
+  <string name="ok">Está bem</string>
+  <string name="old_folder_animation">Animação de pasta antiga</string>
+  <string name="one_bar">Barra de pesquisa do Android One</string>
+  <string name="one_finger_down">Um dedo desliza para baixo</string>
+  <string name="one_finger_up">Um dedo deslize para cima</string>
+  <string name="out_of_space">Não há mais espaço nesta tela inicial</string>
+  <string name="overview">Visão geral</string>
+  <string name="package_state_unknown">Desconhecido</string>
+  <string name="page_not_empty">Esta página não está vazia.  Esses itens também serão removidos.</string>
+  <string name="parallax_scrolling">Rolagem invertida de papel de parede</string>
+  <string name="password_toggle_content_description">Alternar visibilidade da senha</string>
+  <string name="path_password_eye">M12,4,5C7,4,5 2,73,7,61 1,12c1,73,4,39 6,7,5 11,7,5s9,27, -3,11 11, -7,5c-1,73, -4,39 -6, -7,5 -11, -7,5zM12,  17c-2.76,0 -5, -2,24 -5,25,25,5,5,5,2MM  , 3s1,34,3 3,3 3, -1,34 3, -3 -1,34, -3 -3, -3z</string>
+  <string name="path_password_eye_mask_strike_through">M2,4,27 L19,73,22 L22,27,19,46 L4,54,1,73 L4,54,1 L23,1 L23,23 L1,23 L1,4,27 Z</string>
+  <string name="path_password_eye_mask_visible">M2,4,27 L2,4,27 L4,54,1,73 L4,54,1,73 L4,54,1 L23,1 L23,23 L1,23 L1,4,27 Z</string>
+  <string name="path_password_strike_through">M3,27,4,27 L19,74,20,74</string>
+  <string name="pdock">Doca arredondada</string>
+  <string name="pdock_radius">Raio de canto</string>
+  <string name="pdock_settings">Configurações de encaixe arredondado</string>
+  <string name="pdock_shadow">Tamanho da sombra</string>
+  <string name="pdock_sum">Estilo Android P</string>
+  <string name="perform_backup">Realizar backup?</string>
+  <string name="perform_restore">Executar restauração?</string>
+  <string name="permdesc_install_shortcut">Permite que um aplicativo adicione atalhos sem intervenção do usuário</string>
+  <string name="permdesc_read_settings">Permite que o aplicativo leia as configurações e atalhos na tela inicial</string>
+  <string name="permdesc_write_settings">Permite que o aplicativo altere as configurações e atalhos na tela inicial</string>
+  <string name="permission_not_ok">Permissão negada</string>
+  <string name="permission_ok">Permissão garantida</string>
+  <string name="permission_sum">Acesso ao armazenamento interno</string>
+  <string name="permlab_install_shortcut">Instalar atalhos</string>
+  <string name="permlab_read_settings">Leia as configurações e atalhos da Página inicial</string>
+  <string name="permlab_write_settings">Gravar configurações e atalhos da Página inicial</string>
+  <string name="pinch_to_overview_pref_summary">Aperte na tela inicial para abrir a visão geral</string>
+  <string name="pinch_to_overview_pref_title">Aperte a visão geral</string>
+  <string name="pixel_search_layout">Layout de pesquisa de pixel</string>
+  <string name="pixel_search_layout_sum">Pode estar indisponível em alguns dispositivos</string>
+  <string name="place_automatically">Adicionar automaticamente</string>
+  <string name="popup_and_shortcut">Atalhos e pop-up</string>
+  <string name="popup_and_shortcut_items">Unid</string>
+  <string name="popup_and_shortcut_sum">Personalizar atalhos e pop-up da tela inicial</string>
+  <string name="popup_compact">Pop-up compacto</string>
+  <string name="popup_on_homescreen">Aparecer</string>
+  <string name="pref_open_source_licenses_title">Licenças de código aberto</string>
+  <string name="pref_show_google_now_summary">@string/msg_minus_one_on_left</string>
+  <string name="qsb_center_text">Alinhamento do texto central</string>
+  <string name="qsb_in_dock_show">Barra de pesquisa na doca</string>
+  <string name="qsb_text">Texto na barra de pesquisa</string>
+  <string name="qsb_text_sans">Use a fonte do Google Sans para texto</string>
+  <string name="reboot">Reiniciar</string>
+  <string name="reboot_sum">Reinicie para reaplicar as configurações</string>
+  <string name="remove_drop_target_label">Remover</string>
+  <string name="remove_gradient">Desativar gradiente de doca</string>
+  <string name="reset_hidden_apps">Reiniciar tudo</string>
+  <string name="reset_hidden_apps_hint">Aplicativos ocultos estão agora disponíveis</string>
+  <string name="reset_hidden_apps_hint_no_apps">Nenhum aplicativo oculto</string>
+  <string name="reset_icon">Ícone de redefinição</string>
+  <string name="reset_user_icon">Redefinir ícone do usuário</string>
+  <string name="resize_any_widget_sum">Permitir redimensionamento de widgets que normalmente não são redimensionáveis</string>
+  <string name="resize_any_widget_title">Redimensione qualquer widget</string>
+  <string name="restore_icons_title">Restaurar banco de dados de ícones</string>
+  <string name="restore_layout_title">Restaurar o layout da tela inicial</string>
+  <string name="restore_pref_title">Restaurar</string>
+  <string name="restore_settings_title">Restaurar configurações</string>
+  <string name="restore_user_icons_title">Restaurar banco de dados de ícones do usuário</string>
+  <string name="right_swipe">Deslizar para a direita</string>
+  <string name="rotate_down">Rodar para baixo</string>
+  <string name="rotate_up">Girar para cima</string>
+  <string name="rounded_corners">Cantos arredondados</string>
+  <string name="rounded_drawer_bar">Barra arredondada</string>
+  <string name="safemode_shortcut_error">Aplicativo transferido desativado no modo de segurança</string>
+  <string name="safemode_widget_error">Widgets desativados no modo de segurança</string>
+  <string name="save_close">Salvar fechar</string>
+  <string name="say_ok_google">Diga "OK Google"</string>
+  <string name="scale">Escala</string>
+  <string name="screen_moved">Tela movida</string>
+  <string name="scrolling">Rolagem</string>
+  <string name="search_bar">Barra de pesquisa</string>
+  <string name="search_menu_title">Procurar</string>
+  <string name="settings_button_text">Configurações iniciais</string>
+  <string name="settings_edit_allow_question">Permitir edição da tela inicial</string>
+  <string name="settings_edit_allow_summary_off">"Ícones e widgets não podem ser adicionados, removidos e movidos na tela inicial"</string>
+  <string name="settings_edit_allow_summary_on">Ícones e widgets podem ser adicionados, removidos e movidos na tela inicial</string>
+  <string name="settings_edit_allow_title">Permitir edição da tela inicial</string>
+  <string name="settings_export_success">Configurações com backup feito com sucesso</string>
+  <string name="settings_import_success">Configurações restauradas com sucesso</string>
+  <string name="share">Compartilhar</string>
+  <string name="shortcut_compact">Atalhos compactos</string>
+  <string name="shortcut_not_available">"Atalho não está disponível"</string>
+  <string name="shortcuts">Atalhos</string>
+  <string name="shortcuts_menu_description">% 1 $ d atalhos para% 2 $ s</string>
+  <string name="shortcuts_menu_with_notifications_description">% 1 $ d atalhos e% 2 $ d notificações para% 3 $ s</string>
+  <string name="show_dock_on_home_screen">Mostrar doca na tela inicial</string>
+  <string name="show_folder_name">Mostrar nome da pasta</string>
+  <string name="show_hidden_pref_off">"Apps ocultos não serão visíveis"</string>
+  <string name="show_hidden_pref_on">Apps ocultos serão mostrados para alterar as configurações de visibilidade</string>
+  <string name="show_hidden_pref_title">Mostrar aplicativos ocultos</string>
+  <string name="show_seconds">Mostrar segundos</string>
+  <string name="show_top_shadow_title">Sombra superior</string>
+  <string name="similar_icons">Ícones similares</string>
+  <string name="size">Tamanho</string>
+  <string name="smallallaps">Barra de pesquisa pequena</string>
+  <string name="smallallaps_sum">Apenas para a barra de pesquisa padrão</string>
+  <string name="smartspace_customize_in_settings">Widget customizado</string>
+  <string name="smartspace_disable">Desativar o widget "Visão rápida"</string>
+  <string name="smartspace_font">Fonte de widget "At a Glance"</string>
+  <string name="smartspace_hours_mins">% 1 $ s% 2 $ s</string>
+  <string name="smartspace_launch_calendar">Calendário</string>
+  <string name="smartspace_launch_clock">Programar alarme</string>
+  <string name="smartspace_launch_keep">Google Keep</string>
+  <string name="smartspace_launch_tasks">Tarefas do Google</string>
+  <string name="smartspace_launch_timer">Definir temporizador</string>
+  <string name="smartspace_launchclock">Launch Clock app</string>
+  <string name="smartspace_launchclock_sum">Em muito tempo pressionando o widget</string>
+  <string name="smartspace_preferences">Preferências</string>
+  <string name="smartspace_preferences_in_settings">Widget "Visão rápida"</string>
+  <string name="smartspace_preferences_in_settings_desc">Configure o widget na parte superior da tela inicial, o que ele deve exibir</string>
+  <string name="smartspace_show_popup">Menu Acções</string>
+  <string name="smartspace_show_popup_sum">Mostrar pop-up com ações rápidas ao tocar no widget</string>
+  <string name="smartspace_time">Adicionar relógio</string>
+  <string name="spin">Girar</string>
+  <string name="springanim">Animação de primavera</string>
+  <string name="springcoef">Nível de flexibilidade da primavera</string>
+  <string name="square_search_bar">Barra de pesquisa quadrada</string>
+  <string name="stack">Pilha</string>
+  <string name="state_loading">Aplicando…</string>
+  <string name="status_bar_notification_info_overflow">999+</string>
+  <string name="statusbar_expand">Mostrar notificações</string>
+  <string name="statusbar_expand_sum">Ao deslizar para baixo com dois dedos</string>
+  <string name="style_1">Estilo 1</string>
+  <string name="style_2">Estilo 2</string>
+  <string name="sum_aboutapp">Sobre o aplicativo, informações de versão, créditos</string>
+  <string name="sum_thanks">Amir Zaidi (amirzaidi), equipe de Lawnchair (deleescape, paphonb, fonix232, divadsn, Rawi666), ezio84, arco, jrizzoli, nebkat, xyyx, Mazda—, chauek, Thecrazyskull, stavros3006, yukuku, hundeva, Naquadu, martin-pedra, materialdesignicons  .com, WhiskeyMotel</string>
+  <string name="summary_app_suggestions">Na parte superior da gaveta de aplicativos</string>
+  <string name="swipe_up">Deslize para cima</string>
+  <string name="system_font_for_smartspace">Use a fonte do sistema</string>
+  <string name="system_font_for_smartspace_sum">Para o widget  "At a Glance "</string>
+  <string name="text_divider">Divisor de texto</string>
+  <string name="text_size">Tamanho do texto da etiqueta</string>
+  <string name="textinbadge">Crachás de notificação</string>
+  <string name="textinbadge_sum">Mostrar o número de notificações em um crachá (os números podem estar imprecisos)</string>
+  <string name="thanks">Graças a</string>
+  <string name="title_app_suggestions">Sugestões de aplicativos</string>
+  <string name="title_background_color">Cor de fundo</string>
+  <string name="title_change_settings">Mudar configurações</string>
+  <string name="title_disable_suggestions_prompt">Desativar sugestões de aplicativos?</string>
+  <string name="title_google_app">Aplicativo do Google</string>
+  <string name="title_missing_notification_access">Acesso de notificação necessário</string>
+  <string name="title_show_google_app">% 1 $ s</string>
+  <string name="transition_effect">Efeito de rolagem</string>
+  <string name="translators">Tradutores</string>
+  <string name="translators_sum">whataudoinghere, stavros3006, LeandroSB, zhushman00</string>
+  <string name="transparent_nav_bar">Barra de navegação transparente</string>
+  <string name="transparent_pdock">Use apenas para gaveta</string>
+  <string name="transparentqsb">Transparência da barra de pesquisa</string>
+  <string name="two_finger_down">Dois dedos deslizam para baixo</string>
+  <string name="two_finger_up">Dois dedos deslizam para cima</string>
+  <string name="two_line_label">Rótulo de duas linhas</string>
+  <string name="uninstall_drop_target_label">Desinstalar</string>
+  <string name="uninstall_system_app_text">"Este é um aplicativo do sistema e não pode ser desinstalado"</string>
+  <string name="unlock">Desbloquear</string>
+  <string name="use_assistant">Assistente do Google</string>
+  <string name="use_assistant_drawer_sum">Em vez disso microfone na barra de pesquisa</string>
+  <string name="use_assistant_sum">Em vez de microfone na barra de pesquisa na doca</string>
+  <string name="use_background_from_iconpack">Use o papel de parede do pacote de ícones</string>
+  <string name="use_custom_badge_color">Cores de crachá personalizado</string>
+  <string name="use_custom_label_color">Cor de etiqueta personalizada</string>
+  <string name="use_dynamic_calendar">Ícone de calendário dinâmico</string>
+  <string name="use_dynamic_clock">Ícone de relógio dinâmico</string>
+  <string name="use_dynamic_icons">Ícones dinâmicos</string>
+  <string name="use_popup_on_homescreen">Mostrar pop-up</string>
+  <string name="use_popup_on_homescreen_sum">Substitua o modo de visão geral com pop-up, pressione e segure na tela inicial</string>
+  <string name="use_qsb_label_color">Cor de fundo da barra de pesquisa personalizada</string>
+  <string name="use_spring_sum">Na gaveta do aplicativo</string>
+  <string name="user_event_dispatcher_class">com.google.android.apps.nexuslauncher.CustomAppPredictor</string>
+  <string name="vertical_only">Somente vertical</string>
+  <string name="vibrationduration">Duração da vibração</string>
+  <string name="vibrationdurationtest">Teste de vibração</string>
+  <string name="wallpaper_button_text">Papeis de parede</string>
+  <string name="wallpaper_picker_package">com.google.android.apps.wallpaper</string>
+  <string name="wallpaper_scroll_title">Papel de parede</string>
+  <string name="warning_cpl_not_default">Não definido como padrão</string>
+  <string name="warning_cpl_not_default_sum">CPL não está definido como o inicializador padrão.  Toque para definir.</string>
+  <string name="white_status_bar_icons">Ícones de barra de status branco</string>
+  <string name="white_theme">Branco</string>
+  <string name="white_withdarktext_theme">Branco com texto escuro</string>
+  <string name="widget_accessible_dims_format">% 1 $ d de largura por% 2 $ d alta</string>
+  <string name="widget_button_text">Widgets</string>
+  <string name="widget_dims_format">% 1 $ d ×% 2 $ d</string>
+  <string name="widget_padding_title">Preenchimento de widget</string>
+  <string name="widget_resized">Widget redimensionado para a largura% 1 $ s altura% 2 $ s</string>
+  <string name="widgets_bottom_sheet_title">% 1 $ s widgets</string>
+  <string name="widgets_in_dock_sum">Permitir adicionar widgets para encaixar</string>
+  <string name="widgets_in_dock_title">Widgets na doca</string>
+  <string name="work_folder_name">Trabalhos</string>
+  <string name="workspace_new_page">Nova página da tela inicial</string>
+  <string name="workspace_scroll_format">Tela inicial% 1 $ d de% 2 $ d</string>
+  <string name="zoom">Zoom</string>
+  <string name="zoom_in">Mais Zoom</string>
+  <string name="zoom_out">Reduzir o zoom</string>
 </resources>
